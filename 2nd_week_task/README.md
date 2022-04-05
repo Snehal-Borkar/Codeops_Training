@@ -23,4 +23,8 @@ json_X_converter.df_xml(flat_dfs, filename)
 ```
 ## 2.Write Class based programming and Modularize it.
 
+### [More](https://github.com/Snehal-Borkar/Codeops_Training/blob/develop/2nd_week_task/Publish_to_PyPI/json2Xconverter/README.md)
+
 ## 3.Publish package to PyPI (Python Package Index)
+
+### [More](https://github.com/Snehal-Borkar/Codeops_Training/blob/develop/2nd_week_task/Publish_to_PyPI/json2Xconverter/README.md)
