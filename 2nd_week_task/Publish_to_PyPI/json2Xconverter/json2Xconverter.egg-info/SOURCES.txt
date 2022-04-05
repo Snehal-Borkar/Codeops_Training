@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+json2Xconverter/__init__.py
+json2Xconverter/api_call_flat.py
+json2Xconverter/x_converter.py
+json2Xconverter.egg-info/PKG-INFO
+json2Xconverter.egg-info/SOURCES.txt
+json2Xconverter.egg-info/dependency_links.txt
+json2Xconverter.egg-info/requires.txt
+json2Xconverter.egg-info/top_level.txt

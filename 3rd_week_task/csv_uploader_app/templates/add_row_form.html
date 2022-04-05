@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add row</title>
+</head>
+<body>
+      <form method="post" name="myForm" enctype="multipart/form-data" action = "/add">
+    {% for field in filds%}
+    <label for="{{field}}">{{field}} </label>
+    <input type="text" name="{{field}}" ><br><br>
+    {% endfor %}
+    <input type="submit" value="Add">
+
+</form>
+</body>
+</html>

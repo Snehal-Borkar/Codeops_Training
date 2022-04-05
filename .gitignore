@@ -1,2 +1,7 @@
 .idea
 .idea/
+.log
+*.log
+./logs
+*./logs
+./_trial_temp

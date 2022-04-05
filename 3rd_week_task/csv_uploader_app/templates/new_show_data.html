@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD-Show data</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+           rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+           crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="">
+
+   <table class="table">
+          <thead>
+            <tr>
+                {% for field in field_list %}
+              <th scope="col">{{field}}</th>
+                {% endfor %}
+                <th scope="col"><a class="btn btn-success btn-sm"  href="/add_record" >Add row</a>
+                </th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for dicts in list_of_all_dicts %}
+            <tr>
+                {% for row in dicts.value %}
+                <td>{{row}}</td>
+                {% endfor %}
+                <td>
+                             <form class ="d-inline" method="post" name="edit_Form" enctype="multipart/form-data"
+                                                                                  action = "/update_record">
+                               {% for key ,value in dicts.PK_data.items() %}
+                                <input value="{{value}}" name="{{key}}" hidden>
+                                {% endfor %}
+
+                                <input class="btn btn-warning btn-sm" type="submit"  value="Update">
+                             </form>
+
+                              <form class ="d-inline" method="post" name="delete_Form" enctype="multipart/form-data"
+                                                                                         action = "/delete_record">
+                                {% for key ,value in dicts.PK_data.items() %}
+                                <input value="{{value}}" name="{{key}}" hidden>
+                                {% endfor %}
+
+                                <input class="btn btn-danger btn-sm" type="submit"  value="Delete">
+                              </form>
+
+                </td>
+
+            </tr>
+
+          {% endfor %}
+          </tbody>
+    </table>
+</body>
+</html>

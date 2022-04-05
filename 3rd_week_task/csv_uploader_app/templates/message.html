@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>message</title>
+</head>
+<body>
+<h3><span>{{send_msg["message_type"]}} : </span><span>{{send_msg["message"]}}</span> in table {{table}}</h3><br>
+<!--<a href = "/up_load"> View data </a>-->
+{% if table %}
+<form method="post" name="myForm" enctype="multipart/form-data" action = "/view_data">
+    <input type="text" name="table" value="{{table}}">
+    <input type="submit" value="View data"></form>
+{% endif %}
+</body>
+</html>

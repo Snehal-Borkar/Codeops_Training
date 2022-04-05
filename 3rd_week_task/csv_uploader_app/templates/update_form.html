@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>crud-update</title>
+</head>
+<body>
+<h3> Update Record </h3><br>
+
+
+<form method="post" name="myForm" enctype="multipart/form-data" action = "/update">
+    {% for key, value in record_dict.items() %}
+    <label for="{{key}}">{{key}} </label>
+        {%  if value is string() %}
+          <input type="text" name="{{key}}" value="{{value|e}}"><br><br>
+        {% else %}
+          <input type="text" name="{{key}}" value="{{value}}"><br><br>
+        {% endif %}
+    {% endfor %}
+
+
+    <input type="submit" value="update">
+
+</form>
+
+
+
+
+</body>
+</html>
