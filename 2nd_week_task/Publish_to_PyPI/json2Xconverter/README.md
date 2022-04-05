@@ -1,10 +1,10 @@
-# Json_X_Converter
+# Json2Xconverter
 
-Under construction! Not ready for use yet! Currently experimenting and planning!
+###This Package is used to call api and generate files (csv,html,xml and pdf) from response data 
 
 Developed by Snehal Borkar (c) 2022
 
-## Examples of How To Use (Buggy Alpha Version)
+## Examples of How To Use.h
 
 Import classes
 

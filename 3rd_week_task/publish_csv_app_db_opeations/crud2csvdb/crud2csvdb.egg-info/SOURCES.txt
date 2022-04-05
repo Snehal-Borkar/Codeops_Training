@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+crud2csvdb/__init__.py
+crud2csvdb/db_operations.py
+crud2csvdb.egg-info/PKG-INFO
+crud2csvdb.egg-info/SOURCES.txt
+crud2csvdb.egg-info/dependency_links.txt
+crud2csvdb.egg-info/requires.txt
+crud2csvdb.egg-info/top_level.txt
