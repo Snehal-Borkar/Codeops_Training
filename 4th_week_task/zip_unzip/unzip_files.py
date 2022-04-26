@@ -9,7 +9,7 @@ logging.basicConfig(filename="./logs/unzip_file.log",
 logger = logging.getLogger()
 # specifying the zip file name
 file_name = "Zip_Generated_files.zip"
-
+# file_name ="C:\\Users\\HP\\Downloads\\Scrcpy_win64.zip"
 # opening the zip file in READ mode
 try:
     with ZipFile(file_name, 'r') as zip:
